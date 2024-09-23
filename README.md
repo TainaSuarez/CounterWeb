@@ -25,8 +25,6 @@ Este proyecto es una página web dedicada a la comunidad de Counter Strike, dond
 - **Patrocinadores**: Espacio dedicado a los patrocinadores del torneo.
 - **Footer**: Información de copyright y créditos.
 
-## Instrucciones para Ejecutar el Proyecto
 
-1. Clona este repositorio en tu máquina local:
-   ```bash
-   git clone https://github.com/tu-usuario/nombre-del-repositorio.git
+
+
