@@ -1,0 +1,261 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: gold;
+    margin: 0;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto; /* Logo, menú y redes sociales */
+    align-items: center;
+    padding: 10px;
+}
+
+.logo {
+    margin: 5px 0 0 50px; 
+}
+
+.logo img {
+    width: 80px; /* Tamaño del logo */
+}
+
+.redes-sociales {
+    margin-left: auto; 
+    margin-top: 0;
+}
+
+.redes-sociales img {
+    width: 120px; 
+}
+
+.menu {
+    margin: 0 20px; 
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.menu a {
+    display: inline-block;
+    color: gold;
+    text-decoration: none;
+    padding: 5px 10px;
+    border: 2px solid transparent;
+    position: relative; 
+}
+
+.menu a::after {
+    content: ''; 
+    display: block; 
+    width: 100%; 
+    border-bottom: 2px solid red;
+    position: absolute; 
+    bottom: -2px;
+    left: 0; /* Alineado a la izquierda */
+    transform: scaleX(1); 
+}
+
+/* Estilo para hover en el enlace */
+.menu a:hover {
+    color: yellow; /* Cambia el color del texto al pasar el cursor */
+}
+
+.noticia-principal {
+    background-image: url('fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px; /* Ajuste de altura a 600px */
+    margin: 0 auto; /* Márgenes automáticos a la izquierda y derecha */
+    position: relative; 
+    text-align: center;
+    overflow: hidden; 
+}
+
+.noticia-principal h1 {
+    margin: 0;
+    padding: 10px; /* Padding del título */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo semitransparente para resaltar el texto */
+    color: yellow; /* Color amarillo del texto */
+    text-decoration: none; /* Sin subrayado */
+    position: absolute; /* Posicionamiento absoluto sobre la imagen */
+    top: 0; /* Alineado en la parte superior */
+    left: 0;
+    right: 0;
+    z-index: 1; /* Asegura que el título esté sobre la imagen */
+}
+
+/* Si el título es un enlace */
+.noticia-principal h1 a {
+    color: yellow; /* color a amarillo */
+    text-decoration: none; /* Sin subrayado en el enlace */
+}
+
+.noticia-principal h1 a:hover {
+    color: yellow; 
+    text-decoration: none;
+}
+
+/* Último Jogo */
+.ultimo-jogo {
+    text-align: center;
+    margin: 40px auto; 
+    color: gold; 
+}
+
+.ultimo-jogo h2 {
+    color: yellow; 
+    font-size: 24px;
+    margin-bottom: 20px; 
+}
+
+.resultado-jogo {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    font-size: 48px; 
+    color: yellow; 
+}
+
+.escudo {
+    width: 80px; /* Tamaño de los escudos */
+    margin: 0 20px; /* Espaciado entre el resultado y los escudos */
+}
+
+.resultado {
+    font-size: 56px; /* Tamaño del resultado */
+    font-weight: bold; /* Texto en negrita */
+    color: yellow; /* Color del texto */
+}
+
+.detalles-jogo {
+    font-size: 18px; /* Tamaño de la fecha */
+    margin-top: 10px; /* Espaciado superior */
+    color: yellow; /* Color de la fecha */
+}
+
+/* Banner Arena */
+.banner-arena {
+    height: 280px; /* Mantén el tamaño del contenedor */
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente */
+    align-items: center; /* Centra la imagen verticalmente */
+}
+
+.banner-arena img {
+    max-width: 100%; 
+    height: auto; 
+}
+
+/* Patrocinadores */
+.patrocinadores {
+    text-align: center;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.patrocinadores img {
+    width: 100px;
+    margin: 10px;
+}
+
+/* Próximo Jogo y Próximos Jogos */
+.proximo-jogo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px auto;
+    width: 100%;
+    background-color: #8B0000; /* Fondo rojo solo para la sección */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.proximo-jogo, .proximos-jogos {
+    color: gold;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.proximo-jogo h2, .proximos-jogos h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.jogo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.escudo-jogo {
+    width: 60px;
+    height: auto;
+}
+
+.escudo-jogo-pequeno {
+    width: 50px;
+    height: auto;
+}
+
+.versus {
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.proximos-jogos .jogo {
+    margin-bottom: 15px;
+}
+
+/* Noticias */
+.noticias {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px; /* 20px de espacio entre cada tarjeta */
+    padding: 20px;
+}
+
+.noticia {
+    background-color: yellow; /* Fondo amarillo */
+    padding-top: 4px;
+    text-align: center;
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombras para destacar las tarjetas */
+    overflow: hidden; /* Esconde cualquier contenido que se desborde */
+}
+
+.noticia h3 a {
+    color: black;
+    text-decoration: none; /* Sin subrayado */
+    font-size: 18px; /* Tamaño de fuente del título */
+    font-weight: bold;
+}
+
+
+
+.noticia img {
+    width: 100px; /* Ancho de las imágenes */
+    height: auto; /* Mantener proporción de imagen */
+    margin-bottom: 10px;
+}
+
+.noticia p {
+    font-size: 14px;
+    color: black;
+    margin: 10px 0; /* Espaciado superior e inferior */
+}
+
+footer {
+    text-align: right;
+    padding: 20px;
+}
