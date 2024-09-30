@@ -15,7 +15,7 @@ Este proyecto es una página web dedicada a la comunidad de Counter Strike, dond
 
 - `index.html`: Archivo principal que contiene el marcado HTML de la página.
 - `style.css`: Archivo de estilos que define la apariencia de la página.
-- `images/`: Carpeta que contiene todas las imágenes utilizadas en el sitio (logo, banners, escudos, etc.).
+
 
 ## Características
 
